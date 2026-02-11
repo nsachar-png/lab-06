@@ -28,8 +28,8 @@ public class CityListTest {
     /**
      * Test adding cities to the list
      */
-
-    void testAdd() {
+    @Test
+    public void testAdd() {
         CityList cityList = mockCityList();
         assertEquals(1, cityList.getCities().size());
 
@@ -57,8 +57,8 @@ public class CityListTest {
     /**
      * Test getting cities and verify sorting order
      */
-
-    void testGetCities() {
+    @Test
+    public void testGetCities() {
         CityList cityList = mockCityList();
 
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(0)));
